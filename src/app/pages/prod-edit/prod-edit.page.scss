@@ -1,0 +1,75 @@
+ion-toolbar {
+  background-color: #000f26;
+  color: lightgray;
+}
+
+ion-thumbnail {
+  width: 90px;
+  height: auto;
+  background-color: transparent;
+  margin: 5px 20px 5px 5px;
+}
+
+.item-form {
+  padding: 10px;
+  margin: 0px;
+}
+
+ion-label {
+  color: #010153;
+  padding: 10px;
+  margin: 5px;
+  font-size: 1.3em;
+}
+
+ion-input {
+  border: 1px solid #010153;
+  border-radius: 10px;
+  margin: 0px 0px 10px 3px;
+  font-size: 1em;
+  color: black;
+  box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.342);
+}
+
+ion-textarea {
+  border: 1px solid #010153;
+  border-radius: 10px;
+  margin: 0px 0px 2px 3px;
+  font-size: 0.8em;
+  color: black;
+  box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.342);
+}
+
+ion-buttons {
+  width: 100%;
+}
+
+ion-button {
+  background-color: #0000a3;
+  box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.473);
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.473);
+  -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.473);
+  -webkit-box-shadow: inset 0px 0px 40px 8px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: inset 0px 0px 40px 8px rgba(0, 0, 0, 0.7);
+  box-shadow: inset 0px 0px 40px 8px rgba(0, 0, 0, 0.7);
+  border-radius: 7px;
+  font-size: 1em;
+  padding: 10px;
+  width: auto;
+  height: 40px;
+  margin: 10px;
+  color: lightgrey;
+}
+
+.group-buttons {
+  width: 100%;
+  align-content: center;
+}
+
+.passwd-visibility {
+  position: relative;
+  float: right;
+  margin: 0px;
+  padding: 1px 2px 1px 2px;
+  border-right: 1px solid white;
+}

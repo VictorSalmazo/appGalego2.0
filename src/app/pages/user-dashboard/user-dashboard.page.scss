@@ -1,0 +1,53 @@
+ion-toolbar {
+  background-color: #000f26;
+  color: lightgray;
+}
+
+ion-content {
+  background-color: #030040;
+}
+
+.logogalego {
+  width: auto;
+  height: auto;
+  background-color: transparent !important;
+  box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.589);
+  -webkit-box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.589);
+  -moz-box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.589);
+  border-radius: 5px;
+}
+
+.saudation {
+  font-size: 1.4em;
+  padding: 15px;
+  font-weight: 700;
+}
+
+.footer-text {
+  margin: 5px;
+  padding: 0;
+}
+
+.img-footer {
+  width: 85px;
+  height: 55px;
+  background-color: white;
+  margin: 5px;
+}
+
+.logo-predador {
+  width: auto;
+  height: auto;
+  box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.589);
+  -webkit-box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.589);
+  -moz-box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.589);
+  border-radius: 5px;
+}
+
+.thumb-pdd {
+  margin: 180px 100px 100px 100px;
+}
+
+.thumb-galego {
+  margin: 40px;
+}

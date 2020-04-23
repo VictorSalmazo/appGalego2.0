@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar color="pdd">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Lista</ion-title>
+    <ion-thumbnail slot="end">
+      <div>
+        <img src="../../assets/logogalego.png" class="logopredador">
+      </div>
+    </ion-thumbnail>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content loadingSpinner="dots" loadingText="Atualizando dados...">      
+    </ion-refresher-content>
+  </ion-refresher>
+  <ion-row>
+    <ion-searchbar class="ion-text-uppercase" placeholder="Nome do Produto" (ionInput)="filter($event)"
+      [(ngModel)]="text"></ion-searchbar>
+  </ion-row>
+  <ion-list>
+    <ion-item class="ion-no-margin ion-no-padding ion-text-center">
+      <ion-col size="3" class="ion-text-center">
+        <p>Código</p>
+      </ion-col>
+      <ion-col size="5" class="ion-text-center">
+        <p>Nome</p>
+      </ion-col>
+      <ion-col size="4" class="ion-text-center">
+        <p>Capacidade</p>
+      </ion-col>
+    </ion-item>
+    <ion-item *ngFor="let item of prod" class="ion-no-padding ion-no-margin" routerLink="/prod-detail-u/{{item._id}}">
+      <ion-col size="3" class="ion-text-center">
+        <p>{{item.codigo}}</p>
+      </ion-col>
+      <ion-col size="5" class="ion-text-center">
+        <p>{{item.nome}}</p>
+      </ion-col>
+      <ion-col size="4" class="ion-text-center">
+        <p>{{item.capacidade}}</p>
+      </ion-col>
+    </ion-item>
+  </ion-list>
+</ion-content>

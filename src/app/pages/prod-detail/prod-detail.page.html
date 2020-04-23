@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-toolbar color="pdd">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Detalhes</ion-title>
+    <ion-thumbnail slot="end">
+      <div>
+        <img src="../../assets/logogalego.png" class="logopredador">
+      </div>
+    </ion-thumbnail>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-item>
+        <ion-col size="4">
+          <p>Código:</p>
+        </ion-col>
+        <ion-col size="8">
+          <ion-card-title class="ion-text-center ion-text-uppercase">{{produto.codigo}}</ion-card-title>
+        </ion-col>
+      </ion-item>
+      <ion-item>
+        <ion-col size="4">
+          <p>Produto:</p>
+        </ion-col>
+        <ion-col size="8">
+          <ion-card-title class="ion-text-center ion-text-uppercase">{{produto.nome}}</ion-card-title>
+        </ion-col>
+      </ion-item>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-grid>
+        <ion-item class="ion-no-margin">
+          <ion-col size="5" class="ion-text-center ion-no-margin ion-no-padding"><label>Acionamento:</label></ion-col>
+          <ion-col size="7" class="ion-text-center ion-text-uppercase">
+            <p>{{produto.acionamento}}</p>
+          </ion-col>
+        </ion-item>
+        <ion-item class="ion-no-margin">
+          <ion-col size="5" class="ion-text-center ion-no-margin ion-no-padding"><label>Capacidade:</label></ion-col>
+          <ion-col size="7" class="ion-text-center ion-text-uppercase">
+            <p>{{produto.capacidade}}</p>
+          </ion-col>
+        </ion-item>
+        <ion-item class="ion-no-margin">
+          <ion-col size="5" class="ion-text-center ion-no-margin ion-no-padding"><label>Condição Pagamento:</label>
+          </ion-col>
+          <ion-col size="7" class="ion-text-center ion-text-uppercase">
+            <P>{{produto.condicao_pagamento}}</P>
+          </ion-col>
+        </ion-item>
+        <ion-item class="ion-no-margin">
+          <ion-col size="5" class="ion-text-center ion-no-margin ion-no-padding"><label>Preço de Venda:</label>
+          </ion-col>
+          <ion-col size="7" class="ion-text-center ion-text-uppercase">
+            <p>{{produto.preco_venda}}</p>
+          </ion-col>
+        </ion-item>
+        <ion-item class="ion-no-margin">
+          <ion-col size="5" class="ion-text-center ion-no-margin ion-no-padding"><label>Observação:</label></ion-col>
+          <ion-col size="7" class="ion-text-center ion-text-uppercase">{{produto.observacao}}</ion-col>
+        </ion-item>
+        <ion-item class="ion-align-self-center">
+          <ion-col offset="4">
+            <ion-button size="small" fill="sharp" color="primary" (click)="openPage('/prod-edit/' + produto._id)">
+              <ion-icon slot="icon-only" name="pencil"></ion-icon>
+            </ion-button>
+            <ion-button size="small" fill="sharp" color="primary" (click)="showConfirm(produto._id)">
+              <ion-icon slot="icon-only" name="trash"></ion-icon>
+            </ion-button>
+          </ion-col>
+        </ion-item>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

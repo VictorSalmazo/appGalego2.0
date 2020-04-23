@@ -1,0 +1,35 @@
+<ion-content color="pdd" class="background">
+  <div class="ion-justify-content-center thumb">
+    <img src="../../assets/logopredador.png" class="logo-predador">
+  </div>
+  <ion-card>
+    <ion-card-content>
+      <form [formGroup]="credentialsForm" (ngSubmit)="singIn()">
+        <div class="item-form">
+          <ion-label>
+            <ion-icon name="at-circle-sharp"></ion-icon> E-mail:
+          </ion-label>
+          <ion-input type="email" formControlName="email"></ion-input>
+        </div>
+        <div class="item-form">
+          <ion-label>
+            <ion-icon name="lock-closed-sharp"></ion-icon> Senha:
+          </ion-label>
+          <ion-label class="passwd-visibility">
+            <ion-icon [name]="tipo ? 'eye-off-sharp' : 'eye-sharp'" (click)="passwdVisibility()"></ion-icon>
+          </ion-label>
+          <ion-input [type]="tipo ? 'text' : 'password'" type="password" formControlName="password"></ion-input>
+        </div>
+        <div class="group-buttons">
+          <ion-buttons>
+            <ion-col slot="center">
+              <ion-button color="pdd" expand="full" type="submit" [disabled]="!credentialsForm.valid">
+                Logon <ion-icon name="log-in-sharp"></ion-icon>
+              </ion-button>
+            </ion-col>
+          </ion-buttons>
+        </div>
+      </form>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

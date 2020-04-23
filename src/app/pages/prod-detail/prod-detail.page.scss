@@ -1,0 +1,40 @@
+ion-toolbar {
+  background-color: #000f26;
+  color: lightgray;
+}
+
+ion-thumbnail {
+  width: 90px;
+  height: auto;
+  background-color: transparent;
+  margin: 5px 20px 5px 5px;
+}
+
+ion-card {
+  ion-item {
+    border: none;
+    background-color: whitesmoke;
+  }
+}
+
+ion-content {
+  background-color: #000125;
+  color: white;
+}
+
+ion-card-title {
+  font-size: 1.3em;
+}
+
+ion-back-buttom {
+  color: white;
+}
+
+ion-card {
+  background-color: whitesmoke;
+}
+
+.alert-ctrl .alert-message{
+  text-align: center;
+  color: rgb(224, 191, 0);
+}

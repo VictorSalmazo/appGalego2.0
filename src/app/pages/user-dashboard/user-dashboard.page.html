@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar color="pdd">
+    <ion-title class="ion-text-center">Predador de Custos</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="showConfirm()">
+        <ion-icon name="log-out-sharp"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content color="pdd">
+  <p class="ion-text-center saudation">Seja bem vindo ao aplicativo de Preços da Galego Equipamentos!</p>
+  <div class="thumb-galego">
+    <img src="../../assets/logogalego.png" class="logogalego">
+  </div>
+  <ion-fab vertical="middle" horizontal="center">
+    <ion-fab-button>
+      <ion-icon name="add-sharp"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="bottom">
+      <ion-fab-button (click)="openPage('prod-list-u')">
+        <ion-icon name="list-sharp"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+  <div class="thumb-pdd">
+    <img src="../../assets/logopredador.png" class="ion-justify-content-center logo-predador">
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-item>
+    <ion-col size="12">
+      <p class="ion-text-center footer-text"> Aplicativo desenvolvido e disponibilizado por Predador de Custos</p>
+    </ion-col>
+  </ion-item>
+</ion-footer>
